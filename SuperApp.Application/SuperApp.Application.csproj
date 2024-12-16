@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SuperApp.Domain\SuperApp.Domain.csproj" />
+    <ProjectReference Include="..\SuperApp.Infra.Data\SuperApp.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
