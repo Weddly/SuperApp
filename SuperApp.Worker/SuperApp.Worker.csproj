@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-SuperApp.Worker-0d628d5f-9e14-43f4-b747-3b70eb7f506b</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Hangfire" Version="1.8.17" />
+        <PackageReference Include="Hangfire.AspNetCore" Version="1.8.17" />
+        <PackageReference Include="Hangfire.Core" Version="1.8.17" />
+        <PackageReference Include="Hangfire.MySql" Version="0.0.7" />
+        <PackageReference Include="Hangfire.MySqlStorage" Version="2.0.3" />
+        <PackageReference Include="Hangfire.Redis.StackExchange" Version="1.10.1-beta2" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0" />
+        <PackageReference Include="MySqlConnector" Version="2.4.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0-preview.2.efcore.9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SuperApp.Application\SuperApp.Application.csproj" />
+      <ProjectReference Include="..\SuperApp.Infra.Data\SuperApp.Infra.Data.csproj" />
+      <ProjectReference Include="..\SuperApp.Jobs\SuperApp.Jobs.csproj" />
+    </ItemGroup>
+</Project>

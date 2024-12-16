@@ -14,6 +14,11 @@ SuperApp.Infra.CrossCutting/obj/
 SuperApp.API/appsettings.json
 SuperApp.API/appsettings.Development.json
 SuperApp.API/SuperApp.API.http
+SuperApp.Worker/bin/
+SuperApp.Worker/obj/
+SuperApp.Worker/appsettings.json
+SuperApp.Jobs/bin/
+SuperApp.Jobs/obj/
 
 .DS_Store
 node_modules
